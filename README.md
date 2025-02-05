@@ -1,0 +1,2 @@
+# Unreachable Code in Julia Function
+This example demonstrates a common error in Julia: unreachable code after a return statement.  The function `myfunction` includes a `return` statement within both branches of the `if-else` block.  Therefore, the final `return 0` statement is never executed and is flagged as an error by the compiler.  This is a subtle error because the code is syntactically correct but logically flawed.
